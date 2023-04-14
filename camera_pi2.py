@@ -7,7 +7,6 @@ class Camera(BaseCamera):
     @staticmethod
     def frames():
         with Picamera2() as camera:
-            camera.configure(camera.create_video_configuration(main={"size": (1920, 1080)}, lores={"size": (640, 480)}, display="lores"))
             camera.start()
 
             # let camera warm up
