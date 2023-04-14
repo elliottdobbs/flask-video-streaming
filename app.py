@@ -10,7 +10,7 @@ from flask import Flask, render_template, Response
 #     from camera import Camera
 
 # Raspberry Pi camera module (requires picamera package)
-from camera_pi import Camera
+from camera_pi2 import Camera
 
 app = Flask(__name__)
 
